@@ -1,0 +1,306 @@
+<div style="font-family: Arial, Helvetica, sans-serif; color: #243247; line-height: 1.6; max-width: 1100px; margin: auto;">
+
+<style>
+.site-planning h2, .site-planning h3, .site-planning h4 { color: #102A56; }
+.site-planning .frame { border: 2px solid #284D83; border-radius: 10px; padding: 20px; margin: 20px 0; }
+.site-planning .section-title { background: #102A56; color: #ffffff; padding: 14px 18px; border-radius: 7px; margin-top: 25px; }
+.site-planning .section-title h2 { color: #ffffff; margin: 0; }
+.site-planning .info { background: #EFF4FB; border-left: 5px solid #426A9F; padding: 15px; margin: 12px 0; }
+.site-planning .response { width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #8CA4C6; border-radius: 5px; margin: 6px 0 15px; font: inherit; }
+.site-planning .wirebox { border: 1px solid #657A99; padding: 12px; text-align: center; background: #F4F6F9; margin: 5px 0; }
+.site-planning .grid { display: flex; flex-wrap: wrap; gap: 12px; }
+.site-planning .grid-item { flex: 1 1 220px; border: 1px solid #A9BCD8; border-radius: 7px; padding: 14px; }
+.site-planning label { display: block; margin: 8px 0; }
+.site-planning .small { font-size: 13px; color: #52657E; }
+.site-planning table { width: 100%; border-collapse: collapse; }
+.site-planning th { background: #102A56; color: white; }
+.site-planning th, .site-planning td { border: 1px solid #A9BCD8; padding: 10px; text-align: left; }
+.site-planning input[type="text"], .site-planning textarea { max-width: 100%; }
+@media print {
+  .site-planning .frame { break-inside: avoid; }
+}
+</style>
+
+<div class="site-planning">
+
+<!-- HEADER -->
+<div style="background:#102A56;color:white;padding:30px 20px;text-align:center;border:5px solid #426A9F;border-radius:12px;">
+  <p style="letter-spacing:3px;font-size:13px;margin:0;">GRADE 9 • WEB DESIGN AND DEVELOPMENT</p>
+  <h1 style="color:white;font-size:32px;">MY WEBSITE BLUEPRINT</h1>
+  <p style="font-size:19px;">Three-Page Website Planning Project</p>
+  <p>Plan it. Sketch it. Organize it. Build it.</p>
+</div>
+
+<div class="frame">
+  <h2>Project Overview</h2>
+  <p>Your task is to plan a website containing three connected pages about a topic of your choice. Before writing HTML or CSS, you will decide what your website is about, who will use it, what each page will contain, and how visitors will navigate the site.</p>
+  <div class="info"><strong>Learning goal:</strong> Create a clear website plan that demonstrates understanding of purpose, audience, navigation, layout, readability, usability, and accessibility.</div>
+
+  <label for="student"><strong>Student Name:</strong></label>
+  <input class="response" id="student" type="text" placeholder="Enter your name">
+
+  <label for="period"><strong>Class / Period:</strong></label>
+  <input class="response" id="period" type="text" placeholder="Enter class or period">
+
+  <label for="project"><strong>Website Project Title:</strong></label>
+  <input class="response" id="project" type="text" placeholder="Example: The World of Basketball">
+
+  <label for="topic"><strong>Website Topic:</strong></label>
+  <textarea class="response" id="topic" rows="2" placeholder="What will your website be about?"></textarea>
+</div>
+
+<!-- SECTION 1 -->
+<div class="section-title"><h2>Section 1: Purpose and Audience</h2></div>
+<div class="frame">
+  <p><strong>Purpose</strong> is the reason a website exists. <strong>Audience</strong> is the group of people the website is designed to serve.</p>
+
+  <label for="purpose"><strong>1. What is the purpose of your website?</strong></label>
+  <p class="small">Will your website inform, teach, entertain, persuade, or help people?</p>
+  <textarea class="response" id="purpose" rows="3" placeholder="My website will..."></textarea>
+
+  <label for="audience"><strong>2. Who is your target audience?</strong></label>
+  <textarea class="response" id="audience" rows="2" placeholder="Example: High school students who enjoy basketball."></textarea>
+
+  <label for="goal"><strong>3. What should visitors learn or do?</strong></label>
+  <textarea class="response" id="goal" rows="2" placeholder="After visiting my website, users should be able to..."></textarea>
+
+  <label for="style"><strong>4. Which visual style fits your website?</strong></label>
+  <select class="response" id="style">
+    <option value="">Choose a style</option>
+    <option>Modern and simple</option>
+    <option>Bold and colorful</option>
+    <option>Sporty and energetic</option>
+    <option>Creative and artistic</option>
+    <option>Professional and informative</option>
+    <option>Nature-inspired</option>
+  </select>
+</div>
+
+<!-- SECTION 2 -->
+<div class="section-title"><h2>Section 2: Plan Your Three Pages</h2></div>
+<div class="info">Your three pages should have different purposes, useful content, and consistent navigation. You may change the suggested page names to match your topic.</div>
+
+<div class="frame">
+  <h3>Page 1: Home</h3>
+  <p>Introduce your website and explain what visitors will find.</p>
+
+  <label for="p1title"><strong>Page title:</strong></label>
+  <input class="response" id="p1title" type="text" value="Home">
+
+  <label for="p1content"><strong>What information will appear on this page?</strong></label>
+  <textarea class="response" id="p1content" rows="4" placeholder="Welcome message, introduction, important information..."></textarea>
+
+  <label for="p1image"><strong>What image or graphic will you include?</strong></label>
+  <textarea class="response" id="p1image" rows="2" placeholder="Describe the image and what it communicates."></textarea>
+</div>
+
+<div class="frame">
+  <h3>Page 2: About / Information</h3>
+  <p>Explain your topic in greater detail and give visitors useful information.</p>
+
+  <label for="p2title"><strong>Page title:</strong></label>
+  <input class="response" id="p2title" type="text" value="About">
+
+  <label for="p2content"><strong>What information will appear on this page?</strong></label>
+  <textarea class="response" id="p2content" rows="4" placeholder="Facts, history, background, explanations..."></textarea>
+
+  <label for="p2image"><strong>What image or graphic will you include?</strong></label>
+  <textarea class="response" id="p2image" rows="2" placeholder="Describe the image and what it communicates."></textarea>
+</div>
+
+<div class="frame">
+  <h3>Page 3: Explore / Resources</h3>
+  <p>Give visitors another way to explore the topic.</p>
+
+  <label for="p3title"><strong>Page title:</strong></label>
+  <input class="response" id="p3title" type="text" value="Explore">
+
+  <label for="p3content"><strong>What information will appear on this page?</strong></label>
+  <textarea class="response" id="p3content" rows="4" placeholder="Tips, resources, projects, a gallery, frequently asked questions..."></textarea>
+
+  <label for="p3image"><strong>What image or graphic will you include?</strong></label>
+  <textarea class="response" id="p3image" rows="2" placeholder="Describe the image and what it communicates."></textarea>
+</div>
+
+<!-- SECTION 3 -->
+<div class="section-title"><h2>Section 3: Create Your Sitemap</h2></div>
+<div class="frame">
+  <p>A <strong>sitemap</strong> shows how pages are organized and connected. Plan a consistent navigation menu so visitors can reach all three pages.</p>
+
+  <div style="border:2px solid #284D83;border-radius:8px;padding:15px;text-align:center;">
+    <div style="background:#102A56;color:white;padding:14px;border-radius:6px;font-weight:bold;">HOME PAGE</div>
+    <div style="height:25px;border-left:2px solid #284D83;width:1px;margin:auto;"></div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;">
+      <div style="background:#E3EBF8;border:1px solid #284D83;padding:12px;flex:1 1 100px;">PAGE 1<br>Home</div>
+      <div style="background:#E3EBF8;border:1px solid #284D83;padding:12px;flex:1 1 100px;">PAGE 2<br>About</div>
+      <div style="background:#E3EBF8;border:1px solid #284D83;padding:12px;flex:1 1 100px;">PAGE 3<br>Explore</div>
+    </div>
+  </div>
+
+  <p><strong>Navigation links to include:</strong></p>
+  <label><input type="checkbox"> Home</label>
+  <label><input type="checkbox"> About / Information</label>
+  <label><input type="checkbox"> Explore / Resources</label>
+  <label><input type="checkbox"> Contact (optional)</label>
+  <label><input type="checkbox"> Gallery (optional)</label>
+
+  <label for="navigation"><strong>Describe how visitors will move between your pages.</strong></label>
+  <textarea class="response" id="navigation" rows="3" placeholder="My navigation menu will appear... Each link will take visitors to..."></textarea>
+</div>
+
+<!-- SECTION 4 -->
+<div class="section-title"><h2>Section 4: Sketch Your Homepage Wireframe</h2></div>
+<div class="frame">
+  <p>A <strong>wireframe</strong> is a simple layout plan that shows where the main parts of a page will go. It focuses on structure rather than finished colors or images.</p>
+
+  <h3>Example Homepage Wireframe</h3>
+  <div style="border:2px solid #657A99;padding:10px;background:#F4F6F9;border-radius:8px;">
+    <div class="wirebox" style="background:#D8E3F3;"><strong>WEBSITE NAME / LOGO</strong></div>
+    <div class="wirebox" style="background:#E8EEF7;">HOME | ABOUT | EXPLORE</div>
+    <div class="wirebox" style="padding:30px 10px;background:#D8E3F3;">
+      <strong>MAIN IMAGE</strong>
+      <p>Headline and short introduction</p>
+      <div style="display:inline-block;background:#102A56;color:white;padding:7px 14px;border-radius:4px;">Explore More</div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;">
+      <div class="wirebox" style="flex:1 1 130px;"><strong>CONTENT BOX 1</strong><p>Short text or facts</p></div>
+      <div class="wirebox" style="flex:1 1 130px;"><strong>CONTENT BOX 2</strong><p>Image or extra details</p></div>
+    </div>
+    <div class="wirebox" style="background:#D8E3F3;">FOOTER / CREDITS</div>
+  </div>
+
+  <p class="small">Your design can be different. The purpose is to organize content before you build the website.</p>
+
+  <label for="wireframe"><strong>Draw your own wireframe on paper, or describe your planned layout below.</strong></label>
+  <textarea class="response" id="wireframe" rows="6" placeholder="Top: logo and website name. Below: navigation menu. Center: headline and image. Bottom: content sections and footer..."></textarea>
+
+  <label for="layout"><strong>Where will your navigation menu appear?</strong></label>
+  <input class="response" id="layout" type="text" placeholder="Example: Across the top of every page">
+
+  <label for="hero"><strong>What will visitors see first?</strong></label>
+  <input class="response" id="hero" type="text" placeholder="Example: A large image and welcome headline">
+</div>
+
+<!-- SECTION 5 -->
+<div class="section-title"><h2>Section 5: Choose Your Visual Design</h2></div>
+<div class="frame">
+  <p>Your design should be attractive, consistent, readable, and appropriate for your audience.</p>
+
+  <label for="primary"><strong>Primary color:</strong></label>
+  <select class="response" id="primary">
+    <option value="">Choose a color</option>
+    <option>Navy blue</option>
+    <option>Dark green</option>
+    <option>Black / charcoal</option>
+    <option>Purple</option>
+    <option>Red</option>
+    <option>Other</option>
+  </select>
+
+  <label for="accent"><strong>Accent color:</strong></label>
+  <select class="response" id="accent">
+    <option value="">Choose an accent color</option>
+    <option>Light blue</option>
+    <option>White</option>
+    <option>Gold / yellow</option>
+    <option>Green</option>
+    <option>Orange</option>
+    <option>Other</option>
+  </select>
+
+  <label for="font"><strong>Font choice:</strong></label>
+  <select class="response" id="font">
+    <option value="">Choose a font</option>
+    <option>Arial</option>
+    <option>Verdana</option>
+    <option>Georgia</option>
+    <option>Other readable font</option>
+  </select>
+
+  <label for="imagestyle"><strong>Image style:</strong></label>
+  <select class="response" id="imagestyle">
+    <option value="">Choose an image style</option>
+    <option>Photos</option>
+    <option>Illustrations</option>
+    <option>Icons and graphics</option>
+    <option>A mix of images</option>
+  </select>
+
+  <label for="consistency"><strong>How will you keep all three pages consistent?</strong></label>
+  <textarea class="response" id="consistency" rows="3" placeholder="I will use the same navigation, colors, fonts, spacing, and heading styles..."></textarea>
+</div>
+
+<!-- SECTION 6 -->
+<div class="section-title"><h2>Section 6: Usability and Accessibility</h2></div>
+<div class="frame">
+  <p>Check each item when you have planned how your website will meet the requirement.</p>
+
+  <label><input type="checkbox"> All three pages have clear titles and useful information.</label>
+  <label><input type="checkbox"> The navigation menu links to all three pages.</label>
+  <label><input type="checkbox"> Text is readable and headings are organized.</label>
+  <label><input type="checkbox"> Text and background colors have sufficient contrast.</label>
+  <label><input type="checkbox"> Informative images will have meaningful alt text.</label>
+  <label><input type="checkbox"> Links and buttons have clear, descriptive labels.</label>
+  <label><input type="checkbox"> The website can be navigated using a keyboard.</label>
+  <label><input type="checkbox"> Pages will be checked on desktop and mobile screens.</label>
+  <label><input type="checkbox"> Links, images, and interactive features will be tested.</label>
+  <label><input type="checkbox"> Information will be reviewed for accuracy and spelling.</label>
+
+  <div class="info"><strong>Remember:</strong> Accessibility means designing a website so people with different abilities can use it. Usability means visitors can complete their tasks easily. A good website needs both.</div>
+</div>
+
+<!-- SECTION 7 -->
+<div class="section-title"><h2>Section 7: Final Reflection</h2></div>
+<div class="frame">
+  <label for="easiest"><strong>1. What part of planning your website was easiest?</strong></label>
+  <textarea class="response" id="easiest" rows="2" placeholder="The easiest part was..."></textarea>
+
+  <label for="challenge"><strong>2. What part of planning was most challenging?</strong></label>
+  <textarea class="response" id="challenge" rows="2" placeholder="The most challenging part was..."></textarea>
+
+  <label for="nextsteps"><strong>3. What do you need to do before coding begins?</strong></label>
+  <textarea class="response" id="nextsteps" rows="3" placeholder="Before I start coding, I need to..."></textarea>
+</div>
+
+<!-- SUBMISSION -->
+<div style="background:#102A56;color:white;border-radius:10px;padding:22px;margin-top:25px;">
+  <h2 style="color:white;">Final Submission Checklist</h2>
+  <p>Before submitting your planning template, make sure you have:</p>
+  <ul>
+    <li>Identified your website's purpose and target audience.</li>
+    <li>Planned content for all three pages.</li>
+    <li>Created a sitemap and navigation plan.</li>
+    <li>Sketched or described your homepage wireframe.</li>
+    <li>Selected colors, fonts, and an image style.</li>
+    <li>Reviewed the usability and accessibility checklist.</li>
+    <li>Completed your reflection questions.</li>
+  </ul>
+</div>
+
+<!-- RUBRIC -->
+<div class="section-title"><h2>Teacher Grading Rubric</h2></div>
+<div class="frame">
+  <p>This planning project is worth 100 points.</p>
+  <table>
+    <thead>
+      <tr><th>Criteria</th><th>Expectations</th><th>Points</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Purpose and Audience</td><td>Clearly identifies the website topic, purpose, and target audience.</td><td>10</td></tr>
+      <tr><td>Three Page Plans</td><td>Plans relevant content and images for all three pages.</td><td>30</td></tr>
+      <tr><td>Sitemap and Navigation</td><td>Shows how the three pages connect and how visitors move between them.</td><td>15</td></tr>
+      <tr><td>Homepage Wireframe</td><td>Organizes the logo, navigation, main content, images, and footer.</td><td>15</td></tr>
+      <tr><td>Visual Design</td><td>Selects suitable colors, readable fonts, and a consistent style.</td><td>10</td></tr>
+      <tr><td>Usability and Accessibility</td><td>Addresses readability, alt text, keyboard access, contrast, and testing.</td><td>15</td></tr>
+      <tr><td>Reflection and Completion</td><td>Completes the reflection and planning requirements.</td><td>5</td></tr>
+      <tr><th colspan="2">TOTAL</th><th>100</th></tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="text-align:center;border-top:2px solid #284D83;padding:20px;margin-top:20px;color:#52657E;">
+  <strong>Your website begins with a plan!</strong>
+  <p>Plan carefully, design for your users, and test before publishing.</p>
+</div>
+
+</div>
